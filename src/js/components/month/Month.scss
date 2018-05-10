@@ -1,3 +1,22 @@
 .month {
   display: flex;
+  flex-direction: column;
+
+  .month-header {
+    display: flex;
+
+    .week-day {
+      padding: 5px;
+      box-sizing: border-box;
+      width: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      span {
+        font-family: 'Roboto-Regular';
+        font-size: 18px;
+      }
+    }
+  }
 }
