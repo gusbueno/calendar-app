@@ -1,0 +1,51 @@
+@import "../../../styles/variables";
+
+.calendar {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .calendar-header {
+    display: flex;
+    align-items: center;
+
+    .previous-btn, .next-btn {
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid $color-green;
+      background-color: $color-green;
+      border-radius: 10px;
+      &:hover {
+        cursor: pointer;
+      }
+
+      span {
+        font-family: 'Roboto-Bold';
+        font-size: 30px;
+        color: $color-bone;
+      }
+    }
+
+    .date {
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+
+      .year {
+        font-family: 'Roboto-bold';
+        font-size: 38px;
+        margin-right: 10px;
+        color: $color-black;
+      }
+  
+      .month {
+        font-family: 'Roboto-Regular';
+        font-size: 30px;
+        color: $color-green;
+      }
+    }
+  }
+}

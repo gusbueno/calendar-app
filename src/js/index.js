@@ -5,6 +5,9 @@ import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 
 import rootReducer from './reducers'
+import Calendar from './containers/calendar/Calendar'
+
+import common from '../styles/common.scss' // load common styles
 
 const store = createStore(
   rootReducer,
@@ -14,7 +17,7 @@ const store = createStore(
 render(
   <Provider store={store}>
     <div>
-      holi
+      <Calendar />
     </div>
   </Provider>,
   document.getElementById('root')
