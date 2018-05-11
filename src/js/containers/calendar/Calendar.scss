@@ -10,6 +10,7 @@
   .calendar-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .previous-btn, .next-btn {
       padding: 10px;

@@ -1,10 +1,11 @@
 import React, { PureComponent } from 'react'
-import propTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import moment from 'moment'
 
 import styles from './Calendar.scss'
 import Month from '../../components/month/Month'
+import { onOpenEventDetail } from '../../actions/eventDetail'
 
 class Calendar extends PureComponent {
   constructor (props) {
@@ -25,22 +26,22 @@ class Calendar extends PureComponent {
   }
 
   _previousMonth () {
-    const previousDate = moment(`${this.state.month}-${this.state.year}`, 'M-YYYY').subtract(1, 'months')
+    const previousDate = moment(`${this.state.month}-${this.state.year}`, ['M-YYYY']).subtract(1, 'months')
     const year = Number(previousDate.format('YYYY'))
     const month = Number(previousDate.format('M'))
     this.setState({ year, month })
   }
 
   _nextMonth () {
-    const nextDate = moment(`${this.state.month}-${this.state.year}`, 'M-YYYY').add(1, 'months')
+    const nextDate = moment(`${this.state.month}-${this.state.year}`, ['M-YYYY']).add(1, 'months')
     const year = Number(nextDate.format('YYYY'))
     const month = Number(nextDate.format('M'))
     this.setState({ year, month })
   }
 
   render () {
-    const monthName = moment(this.state.month, 'MM').format('MMMM')
-    const daysInMonth = moment(`${this.state.year}-${this.state.month}`).daysInMonth()
+    const monthName = moment(this.state.month, ['MM']).format('MMMM')
+    const daysInMonth = moment(`${this.state.year}-${this.state.month}`, ['YYYY-MM']).daysInMonth()
     return (
       <div className={styles.calendar}>
         <div className={styles['calendar-header']}>
@@ -55,10 +56,22 @@ class Calendar extends PureComponent {
             <span>{'>'}</span>
           </div>
         </div>
-        <Month month={this.state.month} daysInMonth={daysInMonth} />
+        <Month year={this.state.year} month={this.state.month} daysInMonth={daysInMonth} onAddEvent={this.props.onAddEvent} />
       </div>
     )
   }
 }
 
-export default connect(null, {})(Calendar)
+const mapDispatchToProps = (dispatch) => {
+  return ({
+    onAddEvent: (data) => {
+      dispatch(onOpenEventDetail(true, data))
+    }
+  })
+}
+
+Calendar.propTypes = {
+  onAddEvent: PropTypes.func.isRequired
+}
+
+export default connect(null, mapDispatchToProps)(Calendar)

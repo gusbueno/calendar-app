@@ -1,0 +1,1 @@
+export const ON_OPEN_EVENT_DETAIL = 'ON_OPEN_EVENT_DETAIL'
