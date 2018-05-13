@@ -10,7 +10,6 @@ const eventDetail = (state = initialState, action) => {
   switch (action.type) {
     case ON_OPEN_EVENT_DETAIL:
       const { isEditMode, data } = action
-      console.log(data)
       return { ...state, isEditMode, data, isOpen: true }
     default:
       return state

@@ -10,7 +10,7 @@ import * as actions from '../../src/js/actions/eventDetail'
 const middlewares = [thunk]
 const mockStore = configureMockStore(middlewares)
 
-describe('PhotoDetail actions', () => {
+describe('EventDetail actions', () => {
   it('should dispatch ON_OPEN_EVENT_DETAIL action when onOpenEventDetail is fired', () => {
     const data = { tsDate: 601293600 }
     const expectedActions = [
