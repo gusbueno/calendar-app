@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+
+.day {
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid $color-green;
+  width: 180px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+
+  .day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    >span {
+      font-size: 12px;
+      font-family: 'Roboto-Bold';
+    }
+
+    .add-event-btn {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $color-green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        cursor: pointer;
+      }
+
+      span {
+        color: $color-white;
+        font-size: 14px;
+        font-family: 'Roboto-Light';
+        text-align: center;
+      }
+    }
+  }
+}
