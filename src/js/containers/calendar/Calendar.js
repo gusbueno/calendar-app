@@ -27,7 +27,6 @@ class Calendar extends PureComponent {
 
   _previousMonth () {
     const previousDate = moment(`${this.state.month}-${this.state.year}`, ['M-YYYY']).subtract(1, 'months')
-    console.log(previousDate)
     const year = Number(previousDate.format('YYYY'))
     const month = Number(previousDate.format('M'))
     this.setState({ year, month })
