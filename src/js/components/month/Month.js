@@ -23,7 +23,7 @@ const renderMonthDays = (year, month, daysInMonth, onAddEvent) => {
       dayNumber += 1
       const tsDate = moment(`${year}-${month}-${dayNumber}`, ['YYYY-M-D']).unix()
       const data = { tsDate }
-      return <Day key={i} dayNumber={dayNumber} onAddEvent={() => onAddEvent(data)} tsDate={tsDate} />
+      return <Day key={i} dayNumber={dayNumber} onAddEvent={/* istanbul ignore next */() => onAddEvent(data)} tsDate={tsDate} />
     }
     return <Day key={i} />
   })
@@ -45,7 +45,8 @@ const Month = ({ year, month, daysInMonth, onAddEvent }) => {
 Month.propTypes = {
   year: PropTypes.number.isRequired,
   month: PropTypes.number.isRequired,
-  daysInMonth: PropTypes.number.isRequired
+  daysInMonth: PropTypes.number.isRequired,
+  onAddEvent: PropTypes.func.isRequired
 }
 
 export default Month
