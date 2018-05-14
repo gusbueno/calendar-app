@@ -45,7 +45,6 @@ class Calendar extends PureComponent {
   }
 
   render () {
-    console.log(this.props.events)
     const monthName = moment(this.state.month, ['MM']).format('MMMM')
     const daysInMonth = moment(`${this.state.year}-${this.state.month}`, ['YYYY-MM']).daysInMonth()
     return (

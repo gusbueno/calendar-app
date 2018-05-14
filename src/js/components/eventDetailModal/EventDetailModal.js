@@ -16,10 +16,10 @@ class EventDetailModal extends PureComponent {
     this._handleDescriptionChange = this._handleDescriptionChange.bind(this)
     this._saveEvent = this._saveEvent.bind(this)
     this._updateEvent = this._updateEvent.bind(this)
+    this._deleteEvent = this._deleteEvent.bind(this)
   }
 
   componentDidMount () {
-    console.log(this.props.data)
     this.props.isEditMode && this.setState({ title: this.props.data.title, description: this.props.data.description })
   }
 
@@ -47,6 +47,11 @@ class EventDetailModal extends PureComponent {
     this.props.onUpdateEvent(data)
   }
 
+  _deleteEvent () {
+    const { id } = this.props.data
+    this.props.onDeleteEvent(id)
+  }
+
   render () {
     const date = moment(this.props.data.ts).format('YYYY-MM-DD')
     return (
@@ -67,7 +72,7 @@ class EventDetailModal extends PureComponent {
             </div>
           </div>
           <div className={[styles['panel-footer'], this.props.isEditMode && styles['edit-mode']].join(' ')}>
-            {this.props.isEditMode && <button type='button' className={styles.delete}>Delete</button>}
+            {this.props.isEditMode && <button type='button' className={styles.delete} onClick={this._deleteEvent}>Delete</button>}
             {this.props.isEditMode ? <button type='button' className={styles.save} onClick={this._updateEvent}>Update</button> : <button type='button' className={styles.save} onClick={this._saveEvent}>Save</button>}
           </div>
         </div>
@@ -80,7 +85,8 @@ EventDetailModal.propTypes = {
   data: PropTypes.object.isRequired,
   onCloseEventDetail: PropTypes.func.isRequired,
   onSaveEvent: PropTypes.func.isRequired,
-  onUpdateEvent: PropTypes.func.isRequired
+  onUpdateEvent: PropTypes.func.isRequired,
+  onDeleteEvent: PropTypes.func.isRequired
 }
 
 export default EventDetailModal

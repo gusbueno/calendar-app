@@ -54,6 +54,9 @@
         border-radius: 3px;
         font-size: 12px;
         font-family: 'Roboto-Regular';
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
         &:hover {
           cursor: pointer;
           background-color: $color-green;
