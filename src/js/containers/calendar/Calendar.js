@@ -6,6 +6,7 @@ import moment from 'moment'
 import styles from './Calendar.scss'
 import Month from '../../components/month/Month'
 import { onOpenEventDetail } from '../../actions/eventDetail'
+import { getEvents } from '../../actions/calendar'
 
 class Calendar extends PureComponent {
   constructor (props) {
@@ -17,6 +18,10 @@ class Calendar extends PureComponent {
 
     this._previousMonth = this._previousMonth.bind(this)
     this._nextMonth = this._nextMonth.bind(this)
+  }
+
+  componentDidMount () {
+    this.props.onGetEvents()
   }
 
   componentWillMount () {
@@ -40,6 +45,7 @@ class Calendar extends PureComponent {
   }
 
   render () {
+    console.log(this.props.events)
     const monthName = moment(this.state.month, ['MM']).format('MMMM')
     const daysInMonth = moment(`${this.state.year}-${this.state.month}`, ['YYYY-MM']).daysInMonth()
     return (
@@ -56,22 +62,37 @@ class Calendar extends PureComponent {
             <span>{'>'}</span>
           </div>
         </div>
-        <Month year={this.state.year} month={this.state.month} daysInMonth={daysInMonth} onAddEvent={this.props.onAddEvent} />
+        <Month year={this.state.year} month={this.state.month} daysInMonth={daysInMonth} onAddEvent={this.props.onAddEvent} events={this.props.events} onUpdateEvent={this.props.onUpdateEvent} />
       </div>
     )
   }
 }
 
+const mapStateToProps = (state) => {
+  return ({
+    events: state.calendar.events
+  })
+}
+
 const mapDispatchToProps = (dispatch) => {
   return ({
     onAddEvent: (data) => {
+      dispatch(onOpenEventDetail(false, data))
+    },
+    onUpdateEvent: (data) => {
       dispatch(onOpenEventDetail(true, data))
+    },
+    onGetEvents: () => {
+      dispatch(getEvents())
     }
   })
 }
 
 Calendar.propTypes = {
-  onAddEvent: PropTypes.func.isRequired
+  onAddEvent: PropTypes.func.isRequired,
+  onGetEvents: PropTypes.func.isRequired,
+  events: PropTypes.array.isRequired,
+  onUpdateEvent: PropTypes.func.isRequired
 }
 
-export default connect(null, mapDispatchToProps)(Calendar)
+export default connect(mapStateToProps, mapDispatchToProps)(Calendar)

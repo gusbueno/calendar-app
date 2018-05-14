@@ -39,4 +39,27 @@
       }
     }
   }
+
+  .day-body {
+    .events {
+      margin: 3px 0 0 0;
+      padding: 0;
+      max-height: 120px;
+      overflow-x: auto;
+
+      .event {
+        padding: 3px;
+        box-sizing: border-box;
+        margin-bottom: 2px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-family: 'Roboto-Regular';
+        &:hover {
+          cursor: pointer;
+          background-color: $color-green;
+          color: white;
+        }
+      }
+    }
+  }
 }

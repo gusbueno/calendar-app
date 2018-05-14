@@ -1,4 +1,4 @@
-import { ON_OPEN_EVENT_DETAIL } from '../constants/ActionTypes'
+import { ON_OPEN_EVENT_DETAIL, ON_CLOSE_EVENT_DETAIL, ON_SAVE_EVENT_SUCCESS } from '../constants/ActionTypes'
 
 const initialState = {
   isEditMode: false,
@@ -11,6 +11,9 @@ const eventDetail = (state = initialState, action) => {
     case ON_OPEN_EVENT_DETAIL:
       const { isEditMode, data } = action
       return { ...state, isEditMode, data, isOpen: true }
+    case ON_SAVE_EVENT_SUCCESS:
+    case ON_CLOSE_EVENT_DETAIL:
+      return { ...state, isEditMode: false, data: {}, isOpen: false }
     default:
       return state
   }

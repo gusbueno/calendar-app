@@ -3,7 +3,15 @@ import PropTypes from 'prop-types'
 
 import styles from './Day.scss'
 
-const Day = ({ dayNumber, onAddEvent, tsDate }) => {
+const renderEvents = (events, onUpdateEvent) => {
+  return events.map(event => {
+    return (
+      <li className={styles.event} key={event.id} onClick={() => onUpdateEvent(event)}>{event.title}</li>
+    )
+  })
+}
+
+const Day = ({ dayNumber, onAddEvent, tsDate, events, onUpdateEvent }) => {
   if (!dayNumber) {
     return <div className={styles.day} />
   }
@@ -12,9 +20,14 @@ const Day = ({ dayNumber, onAddEvent, tsDate }) => {
     <div className={styles.day}>
       <div className={styles['day-header']}>
         <span>{dayNumber}</span>
-        <div className={styles['add-event-btn']} onClick={() => onAddEvent(tsDate)}>
+        <div className={styles['add-event-btn']} onClick={() => onAddEvent({ ts: tsDate })}>
           <span>+</span>
         </div>
+      </div>
+      <div className={styles['day-body']}>
+        <ul className={styles.events}>
+          {renderEvents(events, onUpdateEvent)}
+        </ul>
       </div>
     </div>
   )
@@ -23,11 +36,14 @@ const Day = ({ dayNumber, onAddEvent, tsDate }) => {
 Day.propTypes = {
   dayNumber: PropTypes.number,
   onAddEvent: PropTypes.func,
-  tsDate: PropTypes.number
+  tsDate: PropTypes.number,
+  events: PropTypes.array,
+  onUpdateEvent: PropTypes.func
 }
 
 Day.defaultProps = {
-  onAddEvent: () => {}
+  onAddEvent: () => {},
+  onUpdateEvent: () => {}
 }
 
 export default Day
