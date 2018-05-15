@@ -12,7 +12,13 @@ const storeFake = {
   default: () => {},
   subscribe: () => {},
   dispatch: () => {},
-  getState: () => {}
+  getState: () => {
+    return {
+      calendar: {
+        events: []
+      }
+    }
+  }
 }
 
 describe('<Calendar /> container', () => {
@@ -28,7 +34,7 @@ describe('<Calendar /> container', () => {
 
   const calendarShallow = shallow(
     <Provider store={storeFake}>
-      <Calendar onAddEvent={(data) => {}} />
+      <Calendar />
     </Provider>
   )
 

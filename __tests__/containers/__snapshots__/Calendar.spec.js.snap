@@ -121,6 +121,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -139,6 +146,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -159,6 +173,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -177,6 +198,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -197,6 +225,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -215,6 +250,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -235,6 +277,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -253,6 +302,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -273,6 +329,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -291,6 +354,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -311,6 +381,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -329,6 +406,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -349,6 +433,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -367,6 +458,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -387,6 +485,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -405,6 +510,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -425,6 +537,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -443,6 +562,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -463,6 +589,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -481,6 +614,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -501,6 +641,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -519,6 +666,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -539,6 +693,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -557,6 +718,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -577,6 +745,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -595,6 +770,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -615,6 +797,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -633,6 +822,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
       <div
@@ -653,6 +849,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -672,6 +875,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
             </span>
           </div>
         </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
+        </div>
       </div>
       <div
         className="day"
@@ -690,6 +900,13 @@ exports[`<Calendar /> container should match with the snapshot 1`] = `
               +
             </span>
           </div>
+        </div>
+        <div
+          className="day-body"
+        >
+          <ul
+            className="events"
+          />
         </div>
       </div>
     </div>
