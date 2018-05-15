@@ -47,7 +47,7 @@ export const saveEvent = (data) => {
     const [err, result] = await to(axios.post('http://localhost:8080/api/event', data))
     err && console.log(err)
     if (result) {
-      dispatch(onSaveEventSuccess(result.data.event))
+      dispatch(onSaveEventSuccess())
       dispatch(getEvents())
     }
   }
