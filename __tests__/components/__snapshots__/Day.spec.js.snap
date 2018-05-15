@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Day /> Component should match with the snapshot 1`] = `
+<div
+  className="day"
+>
+  <div
+    className="day-header"
+  >
+    <span>
+      1
+    </span>
+    <div
+      className="add-event-btn"
+      onClick={[Function]}
+    >
+      <span>
+        +
+      </span>
+    </div>
+  </div>
+  <div
+    className="day-body"
+  >
+    <ul
+      className="events"
+    >
+      <li
+        className="event"
+        onClick={[Function]}
+      >
+        meetup
+      </li>
+    </ul>
+  </div>
+</div>
+`;

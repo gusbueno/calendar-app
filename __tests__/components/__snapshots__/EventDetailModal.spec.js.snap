@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EventDetailModal /> Component should match with the snapshot 1`] = `
+<div
+  className="event-detail-modal"
+>
+  <div
+    className="panel"
+  >
+    <div
+      className="panel-header"
+    >
+      <span
+        className="date"
+      >
+        1970-01-08
+      </span>
+      <span
+        className="close-btn"
+        onClick={[Function]}
+      >
+        Close
+      </span>
+    </div>
+    <div
+      className="panel-body"
+    >
+      <div
+        className="group-input"
+      >
+        <label>
+          Title
+        </label>
+        <input
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="group-input"
+      >
+        <label>
+          Description
+        </label>
+        <textarea
+          onChange={[Function]}
+          rows="10"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="panel-footer false"
+    >
+      <button
+        className="save"
+        onClick={[Function]}
+        type="button"
+      >
+        Save
+      </button>
+    </div>
+  </div>
+</div>
+`;
