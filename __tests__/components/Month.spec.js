@@ -7,16 +7,24 @@ import Month from '../../src/js/components/month/Month'
 import Day from '../../src/js/components/day/Day'
 
 describe('<Month /> Component', () => {
+  const events = [
+    {
+      id: 1,
+      title: 'meetup',
+      description: 'PWA vs Hybrid vs Native',
+      ts: 601293600
+    }
+  ]
   it('should match with the snapshot', () => {
     const tree = renderer.create(
-      <Month year={2018} month={5} daysInMonth={31} onAddEvent={() => {}} />
+      <Month year={2018} month={5} daysInMonth={31} onAddEvent={() => {}} events={events} onUpdateEvent={() => {}} />
     )
     const json = tree.toJSON()
     expect(json).toMatchSnapshot()
   })
 
   const monthShallow = shallow(
-    <Month year={2018} month={5} daysInMonth={31} onAddEvent={() => {}} />
+    <Month year={2018} month={5} daysInMonth={31} onAddEvent={() => {}} events={events} onUpdateEvent={() => {}} />
   )
 
   it('should exists', () => {
