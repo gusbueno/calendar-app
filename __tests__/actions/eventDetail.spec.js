@@ -11,7 +11,8 @@ import {
   ON_CLOSE_EVENT_DETAIL,
   ON_SAVE_EVENT_SUCCESS,
   ON_UPDATE_EVENT_SUCCESS,
-  ON_DELETE_EVENT_SUCCESS
+  ON_DELETE_EVENT_SUCCESS,
+  ON_EVENTS_RECEIVED
 } from '../../src/js/constants/ActionTypes'
 import * as actions from '../../src/js/actions/eventDetail'
 
@@ -76,15 +77,58 @@ describe('EventDetail actions', () => {
       ts: 601293600
     }
 
+    const events = [{ ...data, id: 1 }]
+
     const expectedActions = [
       { type: ON_SAVE_EVENT_SUCCESS }
     ]
 
     const mock = new MockAdapter(axios)
-    mock.onPost(`http://localhost:8080/api/event`, data).reply(201)
+    mock.onPost('http://localhost:8080/api/event', data).reply(201)
+    mock.onGet('http://localhost:8080/api/events').reply(200, { events })
 
     const store = mockStore()
     return store.dispatch(actions.saveEvent(data)).then(() => {
+      expect(store.getActions()).toEqual(expectedActions)
+    })
+  })
+
+  it('should dispatch ON_UPDATE_EVENT_SUCCESS action when updateEvent is fired', () => {
+    const data = {
+      id: 1,
+      title: 'meetup',
+      description: 'PWA vs Hybrid vs Native',
+      ts: 601293600
+    }
+
+    const events = [{ ...data, id: 1 }]
+
+    const expectedActions = [
+      { type: ON_UPDATE_EVENT_SUCCESS }
+    ]
+
+    const mock = new MockAdapter(axios)
+    mock.onPut('http://localhost:8080/api/event/1', { title: 'meetup', description: 'PWA vs Hybrid vs Native', ts: 601293600 }).reply(200)
+    mock.onGet('http://localhost:8080/api/events').reply(200, { events })
+
+    const store = mockStore()
+    return store.dispatch(actions.updateEvent(data)).then(() => {
+      expect(store.getActions()).toEqual(expectedActions)
+    })
+  })
+
+  it('should dispatch ON_DELETE_EVENT_SUCCESS action when deleteEvent is fired', () => {
+    const events = []
+    const expectedActions = [
+      { type: ON_DELETE_EVENT_SUCCESS }
+    ]
+
+    const mock = new MockAdapter(axios)
+    mock.onDelete('http://localhost:8080/api/event/1').reply(204)
+    mock.onGet('http://localhost:8080/api/events').reply(200, { events })
+
+    const store = mockStore()
+    return store.dispatch(actions.deleteEvent(1)).then(() => {
       expect(store.getActions()).toEqual(expectedActions)
     })
   })
