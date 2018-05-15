@@ -1,4 +1,3 @@
-
 /* global describe, it, expect */
 
 import React from 'react'
@@ -6,7 +5,7 @@ import { shallow } from 'enzyme'
 import renderer from 'react-test-renderer'
 import { Provider } from 'react-redux'
 
-import Calendar from '../../src/js/containers/calendar/Calendar'
+import EventDetail from '../../src/js/containers/eventDetail/EventDetail'
 
 const storeFake = {
   default: () => {},
@@ -14,31 +13,35 @@ const storeFake = {
   dispatch: () => {},
   getState: () => {
     return {
-      calendar: {
-        events: []
+      eventDetail: {
+        isEditMode: false,
+        isOpen: true,
+        data: {
+          ts: 601293600
+        }
       }
     }
   }
 }
 
-describe('<Calendar /> container', () => {
+describe('<EventDetail /> container', () => {
   it('should match with the snapshot', () => {
     const tree = renderer.create(
       <Provider store={storeFake}>
-        <Calendar />
+        <EventDetail />
       </Provider>
     )
     const json = tree.toJSON()
     expect(json).toMatchSnapshot()
   })
 
-  const calendarShallow = shallow(
+  const eventDetailShallow = shallow(
     <Provider store={storeFake}>
-      <Calendar />
+      <EventDetail />
     </Provider>
   )
 
   it('should exists', () => {
-    expect(calendarShallow.length).toEqual(1)
+    expect(eventDetailShallow.length).toEqual(1)
   })
 })

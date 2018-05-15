@@ -19,5 +19,19 @@ exports[`<Day /> Component should match with the snapshot 1`] = `
       </span>
     </div>
   </div>
+  <div
+    className="day-body"
+  >
+    <ul
+      className="events"
+    >
+      <li
+        className="event"
+        onClick={[Function]}
+      >
+        meetup
+      </li>
+    </ul>
+  </div>
 </div>
 `;

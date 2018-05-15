@@ -84,6 +84,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -102,6 +109,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -122,6 +136,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -140,6 +161,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -160,6 +188,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -178,6 +213,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -198,6 +240,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -216,6 +265,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -236,6 +292,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -254,6 +317,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -274,6 +344,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -292,6 +369,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -312,6 +396,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -330,6 +421,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -350,6 +448,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -368,6 +473,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -388,6 +500,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -406,6 +525,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -426,6 +552,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -444,6 +577,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -464,6 +604,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -482,6 +629,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -502,6 +656,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -520,6 +681,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -540,6 +708,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -558,6 +733,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -578,6 +760,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -596,6 +785,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
     <div
@@ -616,6 +812,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -635,6 +838,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
           </span>
         </div>
       </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
+      </div>
     </div>
     <div
       className="day"
@@ -653,6 +863,13 @@ exports[`<Month /> Component should match with the snapshot 1`] = `
             +
           </span>
         </div>
+      </div>
+      <div
+        className="day-body"
+      >
+        <ul
+          className="events"
+        />
       </div>
     </div>
   </div>

@@ -1,5 +1,5 @@
 FROM node:8.10.0
-EXPOSE 8080
+EXPOSE 80
 
 WORKDIR /calendar
 

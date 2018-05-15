@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --port 3000 --mode development",
+    "start": "webpack-dev-server --port 3001 --mode development",
     "test": "jest"
   },
   "repository": {

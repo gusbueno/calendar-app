@@ -1,0 +1,113 @@
+@import "../../../styles/variables";
+
+.event-detail-modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color-black, 0.9);
+  padding: 20px 50px;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+
+  .panel {
+    width: 400px;
+    height: 200px;
+
+    &-header {
+      padding: 10px;
+      box-sizing: border-box;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: $color-bone;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .date {
+        font-size: 24px;
+        font-family: 'Roboto-Bold';
+      }
+
+      .close-btn {
+        font-size: 12px;
+        font-family: 'Roboto-Regular';
+        color: $color-green;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-body {
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: $color-alabaster;
+
+      .group-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        label {
+          font-size: 12px;
+          font-family: 'Roboto-Regular';
+          margin-bottom: 5px;
+        }
+
+        input, textarea {
+          font-size: 14px;
+          font-family: 'Roboto-Regular';
+          border-radius: 5px;
+          border: 1px solid $color-green;
+          padding: 5px;
+          box-sizing: border-box;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    &-footer {
+      display: flex;
+      padding: 10px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: $color-white;
+      justify-content: flex-end;
+      align-items: center;
+      &.edit-mode {
+        justify-content: space-between;
+      }
+
+      .save {
+        background-color: $color-green;
+        color: white;
+      }
+
+      .delete {
+        background-color: orange;
+      }
+
+      button {
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 18px;
+        font-family: 'Roboto-Regular';
+        border: 0;
+        border-radius: 5px;
+        &:hover {
+          cursor: pointer;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

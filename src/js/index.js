@@ -6,6 +6,7 @@ import thunk from 'redux-thunk'
 
 import rootReducer from './reducers'
 import Calendar from './containers/calendar/Calendar'
+import EventDetail from './containers/eventDetail/EventDetail'
 
 import common from '../styles/common.scss' // load common styles
 
@@ -18,6 +19,7 @@ render(
   <Provider store={store}>
     <div>
       <Calendar />
+      <EventDetail />
     </div>
   </Provider>,
   document.getElementById('root')
