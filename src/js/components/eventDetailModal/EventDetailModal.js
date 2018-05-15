@@ -82,6 +82,7 @@ class EventDetailModal extends PureComponent {
 }
 
 EventDetailModal.propTypes = {
+  isEditMode: PropTypes.bool.isRequired,
   data: PropTypes.object.isRequired,
   onCloseEventDetail: PropTypes.func.isRequired,
   onSaveEvent: PropTypes.func.isRequired,
