@@ -3,6 +3,9 @@ React/Redux calendar app
 
 ## Launch app
 
+###### IMPORTANT!
+Launch the [Calendar API](https://github.com/gusbueno/calendar-api) before launch this webapp
+
 #### With Docker
 From the terminal command:
 * Run `docker build -t calendar .`
