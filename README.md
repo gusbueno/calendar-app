@@ -18,3 +18,8 @@ From the terminal command:
 * Run `npm start` to launch the **development server with hot-reload**
 * Visit [http://localhost:3001](http://localhost:3001)
 * Or run `npm run build` to generate the **production bundle**
+
+## Unit tests
+
+Run `npm install` if you didn't do before
+Run `npm test` to launch all the unit tests. This command will create a **coverage** folder with the code coverage which is ~80%
