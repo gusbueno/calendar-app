@@ -11,8 +11,7 @@ import {
   ON_CLOSE_EVENT_DETAIL,
   ON_SAVE_EVENT_SUCCESS,
   ON_UPDATE_EVENT_SUCCESS,
-  ON_DELETE_EVENT_SUCCESS,
-  ON_EVENTS_RECEIVED
+  ON_DELETE_EVENT_SUCCESS
 } from '../../src/js/constants/ActionTypes'
 import * as actions from '../../src/js/actions/eventDetail'
 
